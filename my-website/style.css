@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  background-color: #f4a300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: #f4a300;
+  padding: 5rem 1rem;
+}
+
+.portfolio-box {
+  background-color: #f7f8fc;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.left-box {
+  width: 100%;
+  max-width: 600px;
+}
+
+.right-box {
+  background-color: #f4a300;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box img {
+  height: 100%;
+  object-fit: cover;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.cert-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #f4a300;
+  box-shadow: 0 0 0 0.2rem rgba(244, 163, 0, 0.25);
+  outline: none;
+}
+.cert-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+#resume {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+#resume h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+@media print {
+  body { background: #fff; }
+  .portfolio-box, .container { box-shadow: none !important; }
+}
+.skill-item {
+  transition: 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+.footer a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffc107; /* Bootstrap warning yellow */
+  transform: translateY(-3px);
+}
+a img {
+  display: inline-block;
+}
+
+a {
+  font-size: 0;
+}
+.simple-blue-btn {
+  padding: 0.25rem 0.7rem;  /* smaller padding */
+  width: 200px;              /* do NOT stretch width */
+  font-weight: 500;
+  border-radius: 0.25rem;   /* Bootstrap default radius */
+  white-space: nowrap;      /* prevent text wrapping */
+  box-shadow: none;         /* remove extra shadow */
+  transition: background-color 0.3s ease;
+}
+
+.simple-blue-btn:hover,
+.simple-blue-btn:focus {
+  background-color: #0b5ed7; /* slightly darker blue on hover */
+  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.4);
+  text-decoration: none;
+}
+/* Container styles (optional if not using Bootstrap spacing) */
+nav.position-absolute {
+  z-index: 1050; /* Make sure it stays on top */
+}
+
+/* Links style */
+nav.position-absolute a {
+  color: #212529; /* Bootstrap’s text-dark */
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Hover/focus color change */
+nav.position-absolute a:hover,
+nav.position-absolute a:focus {
+  color: #0d6efd; /* Bootstrap primary blue */
+  outline: none;
+}
+
+/* Underline animation on hover */
+nav.position-absolute a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+nav.position-absolute a:hover::after,
+nav.position-absolute a:focus::after {
+  width: 100%;
+}
+
+/* Active link styling (if you add 'active' class dynamically) */
+nav.position-absolute a.active {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+nav.position-absolute a.active::after {
+  width: 100%;
+}
+
+/* Responsive display handled by your existing classes */
+/* Gap already handled by 'gap-4' */
+.skill-badge {
+  display: inline-block;
+  background-color: #e7f1ff; /* very light blue */
+  color: #007bff; /* bootstrap blue */
+  padding: 4px 10px;
+  margin: 3px 4px 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 15px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #c2d7ff;
+  cursor: default;
+}
+
