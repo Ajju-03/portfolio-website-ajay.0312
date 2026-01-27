@@ -87,6 +87,14 @@ form textarea:focus {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.1);
 }
+.project-item {
+  transition: 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
 .footer a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
