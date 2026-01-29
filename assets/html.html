@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root {
+            --yellow-bg: #fdbd33;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+
+        /* The Main Card */
+        .profile-card {
+            display: flex;
+            width: 800px;
+            height: 450px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* Left Side (Empty/Text area) */
+        .content-area {
+            flex: 1;
+            padding: 40px;
+        }
+
+        /* The Yellow Wavy Section */
+        .yellow-section {
+            flex: 1;
+            background-color: var(--yellow-bg);
+            position: relative;
+            /* This creates the curve effect */
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 15% 70%, 0% 35%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        /* Your Image */
+        .profile-pic {
+            width: 90%;
+            height: auto;
+            object-fit: contain;
+            /* Positioning it to look like it's coming out of the curve */
+            margin-bottom: -10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="content-area">
+            </div>
+
+        <div class="yellow-section">
+            <img src="your-image-no-bg.png" alt="Profile" class="profile-pic">
+        </div>
+    </div>
+
+</body>
+</html>
