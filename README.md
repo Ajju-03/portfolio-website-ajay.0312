@@ -10,7 +10,7 @@ portfolio/
 ├── style.css        ← All styles & responsive design
 ├── main.js          ← Interactions: cursor, scroll reveal, animations
 ├── assets/
-│   └── ajaymachinelearning.pdf   ← Your resume PDF (add this!)
+│   └── ajaykumarML.pdf   ← Your resume PDF (add this!)
 └── README.md
 ```
 
